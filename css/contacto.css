@@ -1,0 +1,134 @@
+/* ===== CONTACTO ===== */
+.contacto {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.contacto h2 {
+    font-size: 2.2rem;
+    color: #1a3a4a;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.contacto>p {
+    text-align: center;
+    color: #5d7a8a;
+    margin-bottom: 2rem;
+}
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2.5rem;
+}
+
+.contacto-info {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 16px;
+    border-left: 5px solid #2c6e7e;
+}
+
+.contacto-info h3 {
+    color: #1a3a4a;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.contacto-info p {
+    color: #3d5a6d;
+    margin: 0.8rem 0;
+    font-size: 1rem;
+}
+
+.contacto-info p strong {
+    color: #1a3a4a;
+}
+
+.contacto-form {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+.contacto-form h3 {
+    color: #1a3a4a;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.contacto-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    padding: 0.8rem 1rem;
+    border: 2px solid #dce4e8;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+    background: white;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    outline: none;
+    border-color: #2c6e7e;
+}
+
+.contacto-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    padding: 0.8rem;
+    background: #2c6e7e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #1a4a5a;
+    transform: scale(1.02);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .contacto-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contacto {
+        padding: 1rem;
+    }
+
+    .contacto h2 {
+        font-size: 1.6rem;
+    }
+
+    .contacto-info,
+    .contacto-form {
+        padding: 1.2rem;
+    }
+
+    .contacto-form input,
+    .contacto-form textarea {
+        font-size: 0.95rem;
+    }
+}

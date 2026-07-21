@@ -1,0 +1,116 @@
+/* ===== PRODUCTOS ===== */
+.productos {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.productos h2 {
+    font-size: 2.2rem;
+    color: #1a3a4a;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.productos>p {
+    text-align: center;
+    color: #5d7a8a;
+    margin-bottom: 2rem;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.producto-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e8edf0;
+}
+
+.producto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.producto-card h3 {
+    color: #1a3a4a;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.producto-card p {
+    color: #5d7a8a;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    min-height: 50px;
+}
+
+.producto-card .precio {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c6e7e;
+    margin-bottom: 1rem;
+}
+
+.btn-producto {
+    background: #2c6e7e;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-producto:hover {
+    background: #1a4a5a;
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .productos {
+        padding: 1rem;
+    }
+
+    .productos h2 {
+        font-size: 1.6rem;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .producto-card img {
+        height: 130px;
+    }
+
+    .producto-card p {
+        font-size: 0.85rem;
+        min-height: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}

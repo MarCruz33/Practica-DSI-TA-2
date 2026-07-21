@@ -1,0 +1,122 @@
+/* ===== CLIMA API ===== */
+.clima-api {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.clima-api h2 {
+    font-size: 2.2rem;
+    color: #1a3a4a;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.clima-api>p {
+    text-align: center;
+    color: #5d7a8a;
+    margin-bottom: 2rem;
+}
+
+.clima-busqueda {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.clima-busqueda input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 2px solid #dce4e8;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.clima-busqueda input:focus {
+    outline: none;
+    border-color: #2c6e7e;
+}
+
+.btn-clima {
+    padding: 0.8rem 1.8rem;
+    background: #2c6e7e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-clima:hover {
+    background: #1a4a5a;
+    transform: scale(1.03);
+}
+
+.clima-info {
+    display: flex;
+    justify-content: center;
+}
+
+.clima-card {
+    background: linear-gradient(135deg, #f0f7fa, #e0edf2);
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.clima-icono {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.clima-datos h3 {
+    font-size: 1.6rem;
+    color: #1a3a4a;
+    margin-bottom: 0.3rem;
+}
+
+.clima-datos p {
+    color: #3d5a6d;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .clima-api {
+        padding: 1rem;
+    }
+
+    .clima-busqueda {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .btn-clima {
+        width: 100%;
+    }
+
+    .clima-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.8rem 1.2rem;
+        gap: 0.8rem;
+    }
+
+    .clima-icono {
+        font-size: 3rem;
+    }
+
+    .clima-datos h3 {
+        font-size: 1.3rem;
+    }
+}

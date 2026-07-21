@@ -1,0 +1,138 @@
+/* ===== USUARIOS API ===== */
+.usuarios-api {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.usuarios-api h2 {
+    font-size: 2.2rem;
+    color: #1a3a4a;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.usuarios-api>p {
+    text-align: center;
+    color: #5d7a8a;
+    margin-bottom: 2rem;
+}
+
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: #5d7a8a;
+    font-size: 1.2rem;
+}
+
+.usuarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.usuario-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    border: 1px solid #e8edf0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.usuario-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.usuario-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2c6e7e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.usuario-info {
+    flex: 1;
+}
+
+.usuario-info h3 {
+    color: #1a3a4a;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.usuario-info p {
+    color: #3d5a6d;
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+    word-break: break-all;
+}
+
+.usuario-info p a {
+    color: #2c6e7e;
+    text-decoration: underline;
+}
+
+.usuario-info p a:hover {
+    color: #1a4a5a;
+}
+
+.error-api {
+    text-align: center;
+    padding: 2rem;
+}
+
+.error-api p {
+    color: #e74c3c;
+    font-size: 1.1rem;
+}
+
+.btn-reintentar {
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    background: #2c6e7e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-reintentar:hover {
+    background: #1a4a5a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .usuarios-api {
+        padding: 1rem;
+    }
+
+    .usuarios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .usuario-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .usuario-avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+}
