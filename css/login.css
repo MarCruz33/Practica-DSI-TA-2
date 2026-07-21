@@ -6,12 +6,21 @@
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    padding: 1.5rem;
+}
+
+/* Wrapper que contiene todo */
+.login-wrapper {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .login-container {
     width: 100%;
-    max-width: 400px;
-    padding: 1.5rem;
 }
 
 .login-box {
@@ -34,9 +43,16 @@
 .login-box h2 {
     color: #1a3a4a;
     font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.login-subtitle {
+    color: #5d7a8a;
+    font-size: 0.95rem;
     margin-bottom: 1.5rem;
 }
 
+/* ===== FORMULARIO ===== */
 .form-group {
     margin-bottom: 1.2rem;
     text-align: left;
@@ -56,8 +72,9 @@
     border: 2px solid #dce4e8;
     border-radius: 10px;
     font-size: 1rem;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
     background: #f8fafc;
+    box-sizing: border-box;
 }
 
 .form-group input:focus {
@@ -89,11 +106,94 @@
     transform: translateY(0);
 }
 
+/* ===== MENSAJE DE ERROR ===== */
 .error-message {
-    color: #e74c3c;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-top: 0.8rem;
     min-height: 1.5rem;
+    font-weight: 500;
+}
+
+/* ===== AYUDA / INFORMACIÓN ===== */
+.login-help {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f0f5f8;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.login-help p {
+    color: #1a3a4a;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.login-help ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.3rem 0;
+}
+
+.login-help ul li {
+    color: #3d5a6d;
+    font-size: 0.8rem;
+    padding: 0.1rem 0;
+    word-break: break-all;
+}
+
+.login-help ul li::before {
+    content: "• ";
+    color: #2c6e7e;
+    font-weight: 700;
+}
+
+.login-help small {
+    display: block;
+    margin-top: 0.3rem;
+    color: #5d7a8a;
+    font-style: italic;
+}
+
+/* ===== BOTÓN VOLVER ===== */
+.btn-volver-container {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e8edf0;
+}
+
+.btn-volver {
+    display: inline-block;
+    background: transparent;
+    color: #2c6e7e;
+    padding: 0.6rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 2px solid #2c6e7e;
+    text-decoration: none;
+}
+
+.btn-volver:hover {
+    background: #2c6e7e;
+    color: #fff;
+    transform: scale(1.03);
+}
+
+/* ===== FOOTER DEL LOGIN ===== */
+.login-footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+.login-footer p {
+    margin: 0;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -109,5 +209,14 @@
 
     .login-box h2 {
         font-size: 1.4rem;
+    }
+
+    .login-help ul li {
+        font-size: 0.7rem;
+    }
+
+    .btn-volver {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
     }
 }
