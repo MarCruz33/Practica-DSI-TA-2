@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Aventura - Clima API</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/clima.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Turismo Aventura">
+            <h1>Turismo Aventura</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="galeria.html">Galería</a>
+            <a href="productos.html">Productos</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="clima.html">Clima</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="clima-api">
+            <h2>Clima en tu Destino</h2>
+            <p>Información meteorológica actualizada</p>
+
+            <div class="clima-busqueda">
+                <input type="text" id="ciudadInput" placeholder="Ingresa una ciudad" value="Mexico City">
+                <button onclick="buscarClima()" class="btn-clima">Buscar</button>
+            </div>
+
+            <div id="climaContainer" class="clima-info">
+                <div class="clima-card">
+                    <div class="clima-icono">
+                        <span id="climaIcono">☀️</span>
+                    </div>
+                    <div class="clima-datos">
+                        <h3 id="climaCiudad">Ciudad de México</h3>
+                        <p id="climaTemp">🌡️ 22°C</p>
+                        <p id="climaDesc">Cielo despejado</p>
+                        <p id="climaHumedad">💧 Humedad: 45%</p>
+                        <p id="climaViento">💨 Viento: 10 km/h</p>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTÓN VOLVER AL INICIO -->
+            <div class="btn-volver-container">
+                <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Turismo Aventura - Todos los derechos reservados</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/clima.js"></script>
+</body>
+
+</html>

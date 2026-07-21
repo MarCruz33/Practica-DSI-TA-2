@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Aventura - Reservas y Vuelos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/reservas.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Turismo Aventura">
+            <h1>Turismo Aventura</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="galeria.html">Galería</a>
+            <a href="productos.html">Productos</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="clima.html">Clima</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservas-api">
+            <h2>🛫 Reservas y Vuelos</h2>
+            <p>Consulta y reserva tus vuelos con los mejores precios</p>
+
+            <div class="reservas-filtros">
+                <div class="filtro-group">
+                    <label for="origen">Origen</label>
+                    <input type="text" id="origen" placeholder="Ciudad de origen" value="CDMX">
+                </div>
+                <div class="filtro-group">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" placeholder="Ciudad de destino" value="Cancún">
+                </div>
+                <div class="filtro-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
+                </div>
+                <button onclick="buscarVuelos()" class="btn-reservar">Buscar Vuelos</button>
+            </div>
+
+            <div id="vuelosContainer" class="vuelos-grid">
+                <div class="vuelo-card">
+                    <div class="vuelo-info">
+                        <h3>🛫 CDMX → Cancún</h3>
+                        <p><strong>Precio:</strong> $3,200 MXN</p>
+                        <p><strong>Duración:</strong> 2h 30min</p>
+                        <p><strong>Escalas:</strong> Directo</p>
+                        <p><strong>Aerolínea:</strong> Aeroméxico</p>
+                        <button class="btn-reservar-vuelo"
+                            onclick="reservarVuelo(1, 'CDMX', 'Cancún', 3200, 'Aeroméxico')">Reservar ahora</button>
+                    </div>
+                </div>
+                <div class="vuelo-card">
+                    <div class="vuelo-info">
+                        <h3>🛫 CDMX → Guadalajara</h3>
+                        <p><strong>Precio:</strong> $2,100 MXN</p>
+                        <p><strong>Duración:</strong> 1h 45min</p>
+                        <p><strong>Escalas:</strong> Directo</p>
+                        <p><strong>Aerolínea:</strong> Volaris</p>
+                        <button class="btn-reservar-vuelo"
+                            onclick="reservarVuelo(2, 'CDMX', 'Guadalajara', 2100, 'Volaris')">Reservar ahora</button>
+                    </div>
+                </div>
+                <div class="vuelo-card">
+                    <div class="vuelo-info">
+                        <h3>🛫 CDMX → Monterrey</h3>
+                        <p><strong>Precio:</strong> $2,800 MXN</p>
+                        <p><strong>Duración:</strong> 2h 10min</p>
+                        <p><strong>Escalas:</strong> Directo</p>
+                        <p><strong>Aerolínea:</strong> Viva Aerobus</p>
+                        <button class="btn-reservar-vuelo"
+                            onclick="reservarVuelo(3, 'CDMX', 'Monterrey', 2800, 'Viva Aerobus')">Reservar
+                            ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reservasContainer" class="reservas-lista">
+                <h3>📋 Mis Reservas</h3>
+                <div id="listaReservas">
+                    <p class="no-reservas">No tienes reservas activas</p>
+                </div>
+            </div>
+
+            <!-- BOTÓN VOLVER AL INICIO -->
+            <div class="btn-volver-container">
+                <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Turismo Aventura - Todos los derechos reservados</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/reservas.js"></script>
+</body>
+
+</html>
