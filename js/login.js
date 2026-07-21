@@ -1,4 +1,4 @@
-
+// ===== LOGIN CON EMAIL (USUARIOS AUTORIZADOS) =====
 document.addEventListener('DOMContentLoaded', function () {
     const loginForm = document.getElementById('loginForm');
     const emailInput = document.getElementById('email');
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-        // ===== FUNCIÓN PARA OBTENER NOMBRE DEL USUARIO =====//
+    // ===== FUNCIÓN PARA OBTENER NOMBRE DEL USUARIO =====
     function obtenerNombreUsuario(email) {
         // Extraer nombre de la parte antes del @
         const partes = email.split('@')[0];
