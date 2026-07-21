@@ -154,9 +154,4 @@ document.addEventListener('DOMContentLoaded', function () {
         errorDiv.className = 'error-message';
     });
 
-    // ===== AYUDA ADICIONAL =====
-    console.log('💡 INSTRUCCIONES:');
-    console.log('1. Copia y pega uno de los correos autorizados');
-    console.log('2. Escribe la contraseña correspondiente');
-    console.log('3. Haz clic en "Ingresar"');
 });
